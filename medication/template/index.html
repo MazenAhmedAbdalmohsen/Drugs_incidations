@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Medication Search</title>
+</head>
+<body>
+    <h1>Medication Search</h1>
+    <form method="POST" action="/">
+        <label for="indications">Enter Indications:</label>
+        <input type="text" name="indications" id="indications">
+        <button type="submit">Submit</button>
+    </form>
+    {% if drug_name %}
+        <h2>Matching Drug Name:</h2>
+        <p>{{ drug_name }}</p>
+    {% endif %}
+</body>
